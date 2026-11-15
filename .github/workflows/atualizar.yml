@@ -1,0 +1,29 @@
+name: Atualizar cardápio
+
+on:
+  schedule:
+    # 06:00, 10:00 e 15:00 no horário de Brasília (o cron do GitHub usa UTC)
+    - cron: "0 9,13,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: python ru.py
+      - name: Publicar alterações
+        run: |
+          git config user.name "cardapio-bot"
+          git config user.email "cardapio-bot@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet || git commit -m "Atualiza cardápio"
+          git pull --rebase
+          git push

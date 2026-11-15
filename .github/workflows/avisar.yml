@@ -1,0 +1,28 @@
+name: Aviso diário
+
+on:
+  schedule:
+    # 10:30 no horário de Brasília (o cron do GitHub usa UTC e pode atrasar alguns minutos)
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Sao_Paulo
+      NTFY_CANAL: ${{ vars.NTFY_CANAL }}
+      PAGINA_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+      WHATSAPP_NUMERO: ${{ secrets.WHATSAPP_NUMERO }}
+      CALLMEBOT_CHAVE: ${{ secrets.CALLMEBOT_CHAVE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Atualizar cardápio antes de avisar
+        run: python ru.py
+      - name: Enviar (na segunda-feira, com o cardápio da semana)
+        run: |
+          if [ "$(date +%u)" = "1" ]; then python avisar.py --semana; else python avisar.py; fi

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b5d3b">
+<title>Hoje no RU · UFSC</title>
+<style>
+  :root {
+    --bg: #f4f1ea; --card: #fffdf8; --ink: #1d2a24; --muted: #6b766f;
+    --line: #e2ddd0; --accent: #0b5d3b; --accent-ink: #fff; --soft: #e3efe7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101613; --card: #18211c; --ink: #ecf1ed; --muted: #93a098;
+      --line: #27332c; --accent: #5fd09a; --accent-ink: #0c1a13; --soft: #1d2d25;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  h1 { font-size: 1.5rem; margin: 0; letter-spacing: -0.02em; }
+  .tabs { display: inline-flex; background: var(--soft); border-radius: 999px; padding: 4px; }
+  .tabs button {
+    border: 0; background: none; color: var(--ink); font: inherit; font-weight: 600;
+    padding: 6px 16px; border-radius: 999px; cursor: pointer;
+  }
+  .tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); }
+  .hoje {
+    margin-top: 20px; background: var(--card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 24px;
+  }
+  .rotulo-dia { color: var(--accent); font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; }
+  .prato { font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.15; font-weight: 750; margin: 6px 0 16px; letter-spacing: -0.02em; text-wrap: balance; }
+  dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; }
+  dt { color: var(--muted); font-size: .9rem; }
+  dd { margin: 0; }
+  h2 { font-size: 1rem; margin: 32px 0 10px; color: var(--muted); font-weight: 600; }
+  .semana { display: grid; gap: 8px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+  details.atual { border-color: var(--accent); }
+  summary {
+    list-style: none; cursor: pointer; padding: 12px 16px;
+    display: grid; grid-template-columns: 76px 1fr; gap: 12px; align-items: baseline;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary .quando { color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; }
+  summary .oque { font-weight: 600; }
+  details dl { padding: 0 16px 14px 104px; font-size: .92rem; }
+  @media (max-width: 480px) { details dl { padding-left: 16px; } }
+  .vazio { color: var(--muted); }
+  .acoes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .acoes a {
+    text-decoration: none; color: var(--ink); border: 1px solid var(--line); background: var(--card);
+    padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 600;
+  }
+  .acoes a.forte { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .fila { margin-top: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 16px 24px; }
+  .fila[hidden] { display: none; }
+  .fila-topo { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .fila-topo a { color: var(--accent); font-weight: 600; font-size: .9rem; }
+  .fila ul { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 16px; }
+  .fila li { display: flex; justify-content: space-between; gap: 8px; font-size: .92rem; }
+  .fila li span:last-child { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .fila .nivel { font-size: 1.15rem; font-weight: 700; }
+  footer { margin-top: 32px; color: var(--muted); font-size: .82rem; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Hoje no RU</h1>
+    <div class="tabs" role="tablist" id="tabs"></div>
+  </header>
+
+  <section class="hoje" id="hoje" aria-live="polite"><p class="vazio">Carregando…</p></section>
+
+  <section class="fila" id="fila" hidden></section>
+
+  <h2>Próximos dias</h2>
+  <div class="semana" id="semana"></div>
+
+  <h2>Na sua agenda</h2>
+  <div class="acoes" id="agenda"></div>
+
+  <footer id="rodape"></footer>
+</main>
+
+<script>
+const DIAS = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+const hojeISO = () => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo" }).format(new Date());
+const el = (tag, attrs = {}, ...filhos) => {
+  const n = Object.assign(document.createElement(tag), attrs);
+  n.append(...filhos);
+  return n;
+};
+const dataDe = iso => new Date(iso + "T12:00:00");
+const principal = itens => {
+  const carnes = itens.filter(i => i.rotulo.toLowerCase().startsWith("carne")).map(i => i.texto);
+  return carnes.length ? carnes.join(" / ") : itens[0].texto;
+};
+const lista = itens => {
+  const dl = el("dl");
+  for (const i of itens) dl.append(el("dt", { textContent: i.rotulo }), el("dd", { textContent: i.texto }));
+  return dl;
+};
+
+let dados, atual = "trindade";
+try { atual = localStorage.getItem("ru") || atual; } catch {}
+
+function desenhar() {
+  const ru = dados.rus[atual] || Object.values(dados.rus)[0];
+  const hoje = hojeISO();
+
+  desenharFila();
+  const tabs = document.getElementById("tabs");
+  tabs.replaceChildren(...Object.entries(dados.rus).map(([chave, r]) =>
+    el("button", {
+      textContent: r.nome.replace("RU ", ""), role: "tab", ariaSelected: String(chave === atual),
+      onclick: () => { atual = chave; try { localStorage.setItem("ru", chave); } catch {} desenhar(); },
+    })));
+
+  const cartao = document.getElementById("hoje");
+  const dia = ru.dias[hoje];
+  const d = dataDe(hoje);
+  const quando = `Hoje · ${DIAS[d.getDay()]}, ${d.toLocaleDateString("pt-BR", { day: "numeric", month: "long" })}`;
+  if (dia) {
+    cartao.replaceChildren(
+      el("div", { className: "rotulo-dia", textContent: quando }),
+      el("div", { className: "prato", textContent: principal(dia.itens) }),
+      lista(dia.itens),
+    );
+  } else {
+    cartao.replaceChildren(
+      el("div", { className: "rotulo-dia", textContent: quando }),
+      el("p", { className: "vazio", textContent:
+        `Sem cardápio publicado para hoje no ${ru.nome}. Pode estar fechado, ou o PDF da semana ainda não saiu.` }),
+      el("div", { className: "acoes" }, el("a", { href: ru.pagina, textContent: "Ver no site do RU", target: "_blank", rel: "noopener" })),
+    );
+  }
+
+  const proximos = Object.entries(ru.dias).filter(([iso]) => iso > hoje).slice(0, 7);
+  const semana = document.getElementById("semana");
+  semana.replaceChildren(...proximos.map(([iso, dia]) => {
+    const dd = dataDe(iso);
+    return el("details", {},
+      el("summary", {},
+        el("span", { className: "quando", textContent: `${DIAS[dd.getDay()].slice(0, 3)} ${dd.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}` }),
+        el("span", { className: "oque", textContent: principal(dia.itens) })),
+      lista(dia.itens));
+  }));
+  if (!proximos.length) semana.append(el("p", { className: "vazio", textContent: "O cardápio dos próximos dias ainda não foi publicado." }));
+
+  const base = new URL(".", location.href).href;
+  const agenda = document.getElementById("agenda");
+  agenda.replaceChildren(...Object.entries(dados.rus).map(([chave, r], n) => {
+    const ics = `${base}ru-${chave}.ics`.replace(/^https?:/, "webcal:");
+    return el("a", {
+      className: n === 0 ? "forte" : "", target: "_blank", rel: "noopener",
+      href: "https://calendar.google.com/calendar/r?cid=" + encodeURIComponent(ics),
+      textContent: `Adicionar ${r.nome} ao Google Agenda`,
+    });
+  }));
+
+  const at = new Date(dados.atualizado);
+  document.getElementById("rodape").replaceChildren(
+    `Atualizado em ${at.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" })} a partir dos PDFs de `,
+    el("a", { href: ru.pagina, textContent: "ru.ufsc.br", target: "_blank", rel: "noopener" }),
+    ". O cardápio pode mudar sem aviso. Página não oficial.");
+}
+
+function desenharFila() {
+  const caixa = document.getElementById("fila");
+  const f = window.fila;
+  if (!f || atual !== "trindade") { caixa.hidden = true; return; }
+  caixa.hidden = false;
+  const lida = new Date(f.atualizado);
+  const minutos = Math.round((Date.now() - lida) / 60000);
+  const hora = lida.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+  const topo = el("div", { className: "fila-topo" },
+    el("span", { className: "rotulo-dia", textContent: `Fila · leitura das ${hora}` }),
+    el("a", { href: f.ao_vivo, target: "_blank", rel: "noopener", textContent: "Ver câmeras ao vivo" }));
+  if (f.erro || !f.cameras.length || minutos > 30) {
+    caixa.replaceChildren(topo, el("p", { className: "vazio", textContent: "Sem leitura recente da fila. Veja as câmeras ao vivo." }));
+    return;
+  }
+  const ul = el("ul");
+  const nomes = { frente: "Fila da frente", tras: "Fila de trás" };
+  const filas = Object.entries(f.filas || {});
+  if (filas.length) {
+    for (const [k, v] of filas) ul.append(el("li", {}, el("span", { textContent: nomes[k] || k }), el("span", { className: "nivel", textContent: `${v.nivel} (${v.pessoas})` })));
+  } else {
+    for (const c of f.cameras) ul.append(el("li", {}, el("span", { textContent: c.nome }), el("span", { textContent: `${c.pessoas} ${c.pessoas === 1 ? "pessoa" : "pessoas"}` })));
+  }
+  caixa.replaceChildren(topo, ul);
+}
+
+fetch("fila.json", { cache: "no-store" })
+  .then(r => r.ok ? r.json() : null)
+  .then(j => { window.fila = j; if (dados) desenharFila(); })
+  .catch(() => {});
+
+fetch("cardapio.json", { cache: "no-store" })
+  .then(r => r.json())
+  .then(j => { dados = j; desenhar(); })
+  .catch(() => {
+    document.getElementById("hoje").replaceChildren(
+      el("p", { className: "vazio", textContent: "Não consegui carregar o cardápio. Tente de novo mais tarde." }));
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+ "atualizado": "2026-11-15T19:29:33-03:00",
+ "ao_vivo": "https://eduplay.rnp.br/app/tv/fila-ru-trindade",
+ "filas": {
+  "frente": {
+   "pessoas": 0,
+   "nivel": "sem fila",
+   "nivel_anterior": "sem fila"
+  },
+  "tras": {
+   "pessoas": 10,
+   "nivel": "média",
+   "nivel_anterior": "pequena"
+  }
+ },
+ "cameras": [
+  {
+   "id": 1,
+   "nome": "Câmera 1 · entrada da frente",
+   "fila": "frente",
+   "pessoas": 0
+  },
+  {
+   "id": 2,
+   "nome": "Câmera 2 · rampa de trás",
+   "fila": "tras",
+   "pessoas": 3
+  },
+  {
+   "id": 3,
+   "nome": "Câmera 3 · rampa de trás",
+   "fila": "tras",
+   "pessoas": 7
+  },
+  {
+   "id": 4,
+   "nome": "Câmera 4 · entrada de trás",
+   "fila": "tras",
+   "pessoas": 0
+  },
+  {
+   "id": 5,
+   "nome": "Rua",
+   "fila": null,
+   "pessoas": 0
+  },
+  {
+   "id": 6,
+   "nome": "Câmera 3 · calçada de trás",
+   "fila": "tras",
+   "pessoas": 0
+  },
+  {
+   "id": 7,
+   "nome": "Câmera 4 · bicicletário",
+   "fila": null,
+   "pessoas": 1
+  }
+ ]
+}

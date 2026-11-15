@@ -1,0 +1,283 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//cardapio-ru-ufsc//PT-BR
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RU Trindade (cardápio)
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+BEGIN:VEVENT
+UID:trindade-2026-11-02@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:RU Trindade: Filé mignon suíno ao molho barbecue
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão carioca\n
+ Carne: Filé mignon suíno ao molho barbecue\nComplemento: Farofa com co
+ uve\nSaladas: Cenoura ralada e rúcula\nMolho: Vinagrete\nSobremesa: Ma
+ çã\n\nPDF: http://siteru.paginas.ufsc.br/files/2026/10/CARDÁPIO-RESTA
+ URANTE-UNIVERSITÁRIO-02-08.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-03@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:RU Trindade: Bife acebolado
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: B
+ ife acebolado\nComplemento: Batata doce\nSaladas: Acelga e beterraba ral
+ ada\nMolho: Molho de mostarda\nSobremesa: Banana\n\nPDF: http://siteru.p
+ aginas.ufsc.br/files/2026/10/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-02-08.
+ 11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-04@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:RU Trindade: Sobrecoxa de frango com ervas
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão carioca\n
+ Carne: Sobrecoxa de frango com ervas\nComplemento: Cenoura cozida\nSalad
+ as: Alface e pepino\nMolho: Molho de ervas\nSobremesa: Laranja\n\nPDF: h
+ ttp://siteru.paginas.ufsc.br/files/2026/10/CARDÁPIO-RESTAURANTE-UNIVERS
+ ITÁRIO-02-08.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-05@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:RU Trindade: Picadinho de carne
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: P
+ icadinho de carne\nComplemento: Abobrinha\, cebola e pimentão\nSaladas:
+  Agrião e rabanete\nMolho: Molho de mostarda\nSobremesa: Maçã\n\nPDF:
+  http://siteru.paginas.ufsc.br/files/2026/10/CARDÁPIO-RESTAURANTE-UNIVE
+ RSITÁRIO-02-08.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-06@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:RU Trindade: Estrogonofe de frango
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão com veget
+ ais\nCarne: Estrogonofe de frango\nComplemento: Batata palha\nSaladas: C
+ hicória e cenoura ralada\nMolho: Vinagrete\nSobremesa: Paçoca\n\nPDF: 
+ http://siteru.paginas.ufsc.br/files/2026/10/CARDÁPIO-RESTAURANTE-UNIVER
+ SITÁRIO-02-08.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-07@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:RU Trindade: Carne ao molho mostarda
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: C
+ arne ao molho mostarda\nComplemento: Macarrão com brócolis\nSaladas: R
+ epolho roxo e pepino\nMolho: Molho de ervas\nSobremesa: Gelatina\n\nPDF:
+  http://siteru.paginas.ufsc.br/files/2026/10/CARDÁPIO-RESTAURANTE-UNIVE
+ RSITÁRIO-02-08.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-08@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:RU Trindade: Filé de peixe à portuguesa
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: F
+ ilé de peixe à portuguesa\nComplemento: Aipim cozido\nSaladas: Beterra
+ ba cozida\nMolho: Molho de mostarda\nSobremesa: Abacaxi\n\nPDF: http://s
+ iteru.paginas.ufsc.br/files/2026/10/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO
+ -02-08.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-09@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:RU Trindade: Sobrecoxa de frango
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão carioca\n
+ Carne: Sobrecoxa de frango\nComplemento: Lentilha com legumes\nSaladas: 
+ Cenoura ralada e alface\nMolho: Vinagrete\nSobremesa: Banana\n\nPDF: htt
+ p://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSIT
+ ÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-10@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:RU Trindade: Filé mignon suíno ao molho agridoce
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: F
+ ilé mignon suíno ao molho agridoce\nComplemento: Abobrinha refogada\nS
+ aladas: Rúcula e beterraba ralada\nMolho: Molho de mostarda\nSobremesa:
+  Maçã\n\nPDF: http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RE
+ STAURANTE-UNIVERSITÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-11@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:RU Trindade: Carne moída com cenoura e milho (almoço) /Almônde
+ gas ao molho vermelho (jantar)
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão com veget
+ ais\nCarne: Carne moída com cenoura e milho (almoço) /Almôndegas ao m
+ olho vermelho (jantar)\nComplemento: Farofa com azeite de dendê (almoç
+ o) / Cenoura cozida (jantar)\nSaladas: Acelga e rabanete\nMolho: Molho d
+ e ervas\nSobremesa: Laranja\n\nPDF: http://siteru.paginas.ufsc.br/files/
+ 2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-12@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:RU Trindade: Iscas de carne ao molho de mostarda
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão carioca\n
+ Carne: Iscas de carne ao molho de mostarda\nComplemento: Brócolis cozid
+ o\nSaladas: Chicória e cenoura ralada\nMolho: Vinagrete\nSobremesa: Ban
+ ana\n\nPDF: http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAU
+ RANTE-UNIVERSITÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-13@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:RU Trindade: Frango acebolado com curry (almoço) / Frango ao cur
+ ry (jantar)
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: F
+ rango acebolado com curry (almoço) / Frango ao curry (jantar)\nCompleme
+ nto: Abóbora cozida\nSaladas: Alface e pepino\nMolho: Molho de mostarda
+ \nSobremesa: Maçã\n\nPDF: http://siteru.paginas.ufsc.br/files/2026/11/
+ CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-14@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:RU Trindade: Bisteca suína com abacaxi
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: B
+ isteca suína com abacaxi\nComplemento: Couve-flor ao molho branco\nSala
+ das: Repolho e beterraba ralada\nMolho: Vinagrete\nSobremesa: Gelatina\n
+ \nPDF: http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE
+ -UNIVERSITÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-15@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:RU Trindade: Moqueca de peixe
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: M
+ oqueca de peixe\nComplemento: Farofa\nSaladas: Vagem cozida\nMolho: Molh
+ o de ervas\nSobremesa: Banana\n\nPDF: http://siteru.paginas.ufsc.br/file
+ s/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-09-15.11.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-16@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:RU Trindade: Bife acebolado ao molho barbecue
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão carioca\n
+ Carne: Bife acebolado ao molho barbecue\nComplemento: Batata e cenoura (
+ almoço)/ Brócolis (jantar)\nSaladas: Rabanete e alface\nMolho: Molho d
+ e ervas\nSobremesa: Banana\n\nPDF: http://siteru.paginas.ufsc.br/files/2
+ 026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-16-22.11-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-17@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:RU Trindade: Iscas de carne acebolada
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: I
+ scas de carne acebolada\nComplemento: Ratatouille\nSaladas: Agrião e be
+ terraba ralada\nMolho: Molho de ervas\nSobremesa: Melão\n\nPDF: http://
+ siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRI
+ O-16-22.11-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-18@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:RU Trindade: Iscas de frango ao curry
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão carioca\n
+ Carne: Iscas de frango ao curry\nComplemento: Abobrinha refogada\nSalada
+ s: Acelga e cenoura ralada\nMolho: Molho de mostarda\nSobremesa: Maçã\
+ n\nPDF: http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANT
+ E-UNIVERSITÁRIO-16-22.11-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-19@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:RU Trindade: Almôndega bovina
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão com veget
+ ais\nCarne: Almôndega bovina\nComplemento: Batata ao forno (almoço)/ M
+ acarrão integral ao alho e óleo (jantar)\nSaladas: Agrião e pepino\nM
+ olho: Molho de ervas\nSobremesa: Banana\n\nPDF: http://siteru.paginas.uf
+ sc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-16-22.11-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-20@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:RU Trindade: Iscas de frango com cebola e milho
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: I
+ scas de frango com cebola e milho\nComplemento: Legumes refogados II\nSa
+ ladas: Chicória e rabanete\nMolho: Molho de mostarda\nSobremesa: Maçã
+ \n\nPDF: http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURAN
+ TE-UNIVERSITÁRIO-16-22.11-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-21@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:RU Trindade: Feijoada e feijoada vegetariana
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral\nCarne: Feijoada e 
+ feijoada vegetariana\nComplemento: Farofa colorida\nSaladas: Couve folha
+  e pepino\nMolho: Vinagrete\nSobremesa: Laranja\n\nPDF: http://siteru.pa
+ ginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-16-22.1
+ 1-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:trindade-2026-11-22@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:RU Trindade: Carne de panela
+DESCRIPTION:Base: Arroz parboilizado / Arroz integral / Feijão\nCarne: C
+ arne de panela\nComplemento: Batata ao forno com ervas\nSaladas: Abobrin
+ ha cozida\nMolho: Molho de mostarda\nSobremesa: Gelatina\n\nPDF: http://
+ siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRI
+ O-16-22.11-1.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

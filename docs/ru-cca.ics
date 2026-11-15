@@ -1,0 +1,181 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//cardapio-ru-ufsc//PT-BR
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RU CCA (cardápio)
+X-WR-TIMEZONE:America/Sao_Paulo
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+BEGIN:VEVENT
+UID:cca-2026-10-26@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:RU CCA: Frango assado
+DESCRIPTION:Saladas: Rúcula\, Cenoura\, Molho de ervas\nAcompanhamentos:
+  Arroz parboilizado\, Arroz integral\, Feijão\, Lentilha\, Batata Baby 
+ com ervas\nCarne: Frango assado\nSobremesa: Banana\n\nPDF: http://siteru
+ .paginas.ufsc.br/files/2026/10/Cardápio-de-26-a-30.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-10-27@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:RU CCA: Suíno ao molho de laranja
+DESCRIPTION:Aviso: FERIADO\nSaladas: Mix de folhas\, Pepino\, Molho shoyu
+ \nAcompanhamentos: Arroz parboilizado\, Arroz integral\, Feijão\, Ervil
+ ha\, Farofa de biju\nCarne: Suíno ao molho de laranja\nSobremesa: Laran
+ ja\n\nPDF: http://siteru.paginas.ufsc.br/files/2026/10/Cardápio-de-26-a
+ -30.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-10-29@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:RU CCA: Frango assado
+DESCRIPTION:Saladas: Mix de folhas\, Beterraba\, Molho de ervas\nAcompanh
+ amentos: Arroz parboilizado\, Arroz integral\, Feijão\, Lentilha\, Faro
+ fa de cebola\nCarne: Frango assado\nSobremesa: Banana\n\nPDF: http://sit
+ eru.paginas.ufsc.br/files/2026/10/Cardápio-de-26-a-30.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-10-30@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:RU CCA: Suíno ao molho escuro
+DESCRIPTION:Saladas: Alface\, Cenoura\, Molho shoyu\nAcompanhamentos: Arr
+ oz parboilizado\, Arroz integral\, Feijão\, Proteína de soja\, Macarr
+ ão alho e óleo\nCarne: Suíno ao molho escuro\nSobremesa: Laranja\n\nP
+ DF: http://siteru.paginas.ufsc.br/files/2026/10/Cardápio-de-26-a-30.10.
+ 2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-02@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:RU CCA: FERIADO
+DESCRIPTION:Aviso: FERIADO\n\nPDF: http://siteru.paginas.ufsc.br/files/20
+ 26/10/Cardápio-de-02-a-06.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-03@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:RU CCA: Bisteca acebolada
+DESCRIPTION:Saladas: Alface\, Cenoura\, Molho shoyu\nAcompanhamentos: Arr
+ oz parboilizado\, Arroz integral\, Feijão\, Ervilha\, Macarrão à marg
+ uerita\nCarne: Bisteca acebolada\nSobremesa: Laranja\n\nPDF: http://site
+ ru.paginas.ufsc.br/files/2026/10/Cardápio-de-02-a-06.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-04@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:RU CCA: Frango ensopado
+DESCRIPTION:Saladas: Rúcula\, Beterraba\, Molho mostarda\nAcompanhamento
+ s: Arroz parboilizado\, Arroz integral\, Feijão\, Lentilha\, Farofa sim
+ ples\nCarne: Frango ensopado\nSobremesa: Maçã\n\nPDF: http://siteru.pa
+ ginas.ufsc.br/files/2026/10/Cardápio-de-02-a-06.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-05@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:RU CCA: Suíno caramelizado
+DESCRIPTION:Saladas: Mix de folhas\, Cenoura\, Molho de ervas\nAcompanham
+ entos: Arroz parboilizado\, Arroz integral\, Feijão\, Mix de grãos\, C
+ reme de abóbora\nCarne: Suíno caramelizado\nSobremesa: Banana\n\nPDF: 
+ http://siteru.paginas.ufsc.br/files/2026/10/Cardápio-de-02-a-06.10.2026
+ .pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-06@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:RU CCA: Frango assado
+DESCRIPTION:Saladas: Alface\, Rabanete\, Molho shoyu\nAcompanhamentos: Ar
+ roz parboilizado\, Arroz integral\, Feijão\, Lentilha\, Farofa de biju\
+ nCarne: Frango assado\nSobremesa: Laranja\n\nPDF: http://siteru.paginas.
+ ufsc.br/files/2026/10/Cardápio-de-02-a-06.10.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-09@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:RU CCA: Bisteca ao shoyu
+DESCRIPTION:Saladas: Mix de folhas\, Cenoura\, Molho de ervas\nAcompanham
+ entos: Arroz parboilizado\, Arroz integral\, Feijão\, Lentilha\, Farofa
+  simples\nCarne: Bisteca ao shoyu\nSobremesa: Laranja\n\nPDF: http://sit
+ eru.paginas.ufsc.br/files/2026/11/Cardápio-de-09-a-13.11.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-10@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:RU CCA: Frango assado
+DESCRIPTION:Saladas: Rúcula\, Pepino\, Molho de mostarda\nAcompanhamento
+ s: Arroz parboilizado\, Arroz integral\, Feijão\, Proteína de soja ref
+ ogada\, Chuchu picante\nCarne: Frango assado\nSobremesa: Maçã\n\nPDF: 
+ http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-09-a-13.11.2026
+ .pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-11@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:RU CCA: Carne moída com cenoura
+DESCRIPTION:Saladas: Alface\, Rabanete\, Molho shoyu\nAcompanhamentos: Ar
+ roz parboilizado\, Arroz integral\, Feijão\, Ervilha\, Farofa de biju c
+ om cebola\nCarne: Carne moída com cenoura\nSobremesa: Laranja\n\nPDF: h
+ ttp://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-09-a-13.11.2026.
+ pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-12@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:RU CCA: Frango ao molho vermelho
+DESCRIPTION:Saladas: Mix de folhas\, Cenoura\, Vinagrete\nAcompanhamentos
+ : Arroz parboilizado\, Arroz integral\, Feijão\, Lentilha\, Batata baby
+  com ervas\nCarne: Frango ao molho vermelho\nSobremesa: Banana\n\nPDF: h
+ ttp://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-09-a-13.11.2026.
+ pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cca-2026-11-13@cardapio-ru-ufsc
+DTSTAMP:20261115T223026Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:RU CCA: Bisteca grelhada
+DESCRIPTION:Saladas: Radite\, Beterraba\, Molho mostarda agridoce\nAcompa
+ nhamentos: Arroz parboilizado\, Arroz integral\, Feijão\, Proteína de 
+ soja\, Macarrão ao alho e óleo\nCarne: Bisteca grelhada\nSobremesa: La
+ ranja\n\nPDF: http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-0
+ 9-a-13.11.2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
