@@ -19,6 +19,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -44,6 +45,33 @@ def principal(itens: list[dict]) -> str:
     return " / ".join(carnes) if carnes else itens[0]["texto"]
 
 
+MARCA_REFEICAO = re.compile(r"\s*\((almo[çc]o|jantar?)\)\s*", re.I)
+
+
+def por_refeicao(texto: str) -> str:
+    """'X (almoço) / Y (jantar)' vira 'almoço: X · jantar: Y'; o resto fica como está."""
+    pedacos = MARCA_REFEICAO.split(texto)
+    if len(pedacos) < 3:
+        return texto
+    partes = []
+    for prato, marca in zip(pedacos[0::2], pedacos[1::2]):
+        nome = "almoço" if marca.lower().startswith("almo") else "jantar"
+        partes.append(f"{nome}: {prato.strip(' /')}")
+    return " · ".join(partes)
+
+
+def linhas_do_dia(ru: dict, dia: dict, chave: str) -> list[str]:
+    prato = por_refeicao(principal(dia["itens"]))
+    if prato.startswith("almoço: "):
+        cabeca = [f"*{ru['nome']}*"] + [p[0].upper() + p[1:] for p in prato.split(" · ")]
+    elif chave == "trindade":
+        cabeca = [f"*{ru['nome']}*", f"Almoço e jantar: {prato}"]
+    else:
+        cabeca = [f"*{ru['nome']}*: {prato}"]
+    return cabeca + [f"• {i['rotulo']}: {por_refeicao(i['texto'])}" for i in dia["itens"]
+                     if not i["rotulo"].lower().startswith("carne") and i["rotulo"] != "Aviso"]
+
+
 def fila_recente(agora: dt.datetime) -> dict:
     fila = ler("fila.json")
     try:
@@ -63,15 +91,12 @@ def mensagem_cardapio(agora: dt.datetime, semana: bool) -> tuple[str, str]:
     hoje = agora.date()
     rus = ler("cardapio.json").get("rus", {})
     partes = []
-    for ru in rus.values():
+    for chave, ru in rus.items():
         dia = ru["dias"].get(hoje.isoformat())
         if not dia:
             partes.append(f"*{ru['nome']}*: sem cardápio publicado para hoje")
             continue
-        linhas = [f"*{ru['nome']}*: {principal(dia['itens'])}"]
-        linhas += [f"• {i['rotulo']}: {i['texto']}" for i in dia["itens"]
-                   if not i["rotulo"].lower().startswith("carne") and i["rotulo"] != "Aviso"]
-        partes.append("\n".join(linhas))
+        partes.append("\n".join(linhas_do_dia(ru, dia, chave)))
     filas = fila_recente(agora)
     if filas:
         partes.append("*Fila agora (Trindade)*\n" + texto_fila(filas))
