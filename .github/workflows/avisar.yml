@@ -13,6 +13,9 @@ jobs:
       TZ: America/Sao_Paulo
       NTFY_CANAL: ${{ vars.NTFY_CANAL }}
       PAGINA_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+      EMAIL_USUARIO: ${{ secrets.EMAIL_USUARIO }}
+      EMAIL_SENHA_APP: ${{ secrets.EMAIL_SENHA_APP }}
+      EMAIL_DESTINOS: ${{ secrets.EMAIL_DESTINOS }}
       WHATSAPP_NUMERO: ${{ secrets.WHATSAPP_NUMERO }}
       CALLMEBOT_CHAVE: ${{ secrets.CALLMEBOT_CHAVE }}
     steps:

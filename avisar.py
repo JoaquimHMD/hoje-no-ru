@@ -5,6 +5,10 @@ Canais de envio, cada um ligado por variáveis de ambiente:
       NTFY_CANAL        nome do canal, ex.: ru-ufsc-trindade
       NTFY_TOKEN        (opcional) token de uma conta ntfy, se o canal for reservado
       PAGINA_URL        (opcional) endereço da página, aberto ao tocar na notificação
+  E-mail pelo Gmail (opcional):
+      EMAIL_USUARIO     conta Gmail que envia
+      EMAIL_SENHA_APP   "senha de app" dessa conta (não é a senha normal)
+      EMAIL_DESTINOS    e-mails de quem recebe, separados por vírgula
   WhatsApp via CallMeBot (opcional, só para o seu próprio número):
       WHATSAPP_NUMERO   seu número com código do país
       CALLMEBOT_CHAVE   a chave que o CallMeBot mandou para você
@@ -20,7 +24,9 @@ import datetime as dt
 import json
 import os
 import re
+import smtplib
 import sys
+from email.message import EmailMessage
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -143,6 +149,26 @@ def enviar_whatsapp(titulo: str, corpo: str) -> bool:
     return True
 
 
+def enviar_email(titulo: str, corpo: str) -> bool:
+    usuario, senha = os.environ.get("EMAIL_USUARIO"), os.environ.get("EMAIL_SENHA_APP")
+    destinos = [d for d in re.split(r"[,;\s]+", os.environ.get("EMAIL_DESTINOS", "")) if d]
+    if not usuario or not senha or not destinos:
+        return False
+    texto = corpo.replace("*", "")
+    if os.environ.get("PAGINA_URL"):
+        texto += "\n\nCardápio completo e próximos dias: " + os.environ["PAGINA_URL"]
+    msg = EmailMessage()
+    msg["Subject"] = titulo
+    msg["From"] = f"Hoje no RU <{usuario}>"
+    msg["To"] = usuario  # os destinatários vão em cópia oculta: ninguém vê o e-mail dos outros
+    msg.set_content(texto)
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=60) as s:
+        s.login(usuario, senha.replace(" ", ""))
+        s.send_message(msg, to_addrs=destinos)
+    print(f"[avisar] e-mail enviado para {len(destinos)} destinatário(s)")
+    return True
+
+
 def main() -> int:
     args = set(sys.argv[1:])
     agora = dt.datetime.now(FUSO)
@@ -158,6 +184,8 @@ def main() -> int:
         print(titulo + "\n\n" + corpo)
         return 0
     enviados = [enviar_ntfy(titulo, corpo, "--fila" in args), enviar_whatsapp(titulo, corpo)]
+    if "--fila" not in args:
+        enviados.append(enviar_email(titulo, corpo))
     if not any(enviados):
         raise SystemExit("Nenhum canal configurado: defina NTFY_CANAL (ou use --mostrar).")
     return 0
