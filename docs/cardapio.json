@@ -923,11 +923,99 @@
       }
      ],
      "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-09-a-13.11.2026.pdf"
+    },
+    "2026-11-16": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Rúcula, Cenoura, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Proteína de soja, Macarrão com espinafre"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Frango assado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Banana"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-16-a-20.11.2026.pdf"
+    },
+    "2026-11-17": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Mix de folhas, Pepino, Molho shoyu"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Ervilha, Farofa de biju"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Suíno ao molho de laranja"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-16-a-20.11.2026.pdf"
+    },
+    "2026-11-18": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Mix de folhas, Beterraba, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Lentilha, Abóbora"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Frango assado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Banana"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-16-a-20.11.2026.pdf"
+    },
+    "2026-11-19": {
+     "itens": [
+      {
+       "rotulo": "Aviso",
+       "texto": "FERIADO"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Alface, Cenoura, Molho shoyu"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Proteína de soja, Farofa simples"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Suíno ao molho escuro"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-16-a-20.11.2026.pdf"
     }
    },
    "nome": "RU CCA",
    "pagina": "https://ru.ufsc.br/cca-2/"
   }
  },
- "atualizado": "2026-11-15T20:45-03:00"
+ "atualizado": "2026-11-18T14:55-03:00"
 }
