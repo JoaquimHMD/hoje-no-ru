@@ -1214,11 +1214,116 @@
       }
      ],
      "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-16-a-20.11.2026.pdf"
+    },
+    "2026-11-23": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Alface, Cenoura, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Proteína de soja, Creme de aipim"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Almondegas ao molho"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Banana"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-23-a-27.11.2026.pdf"
+    },
+    "2026-11-24": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Mix de folhas, Pepino, Molho shoyu"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Mix de grãos, Abóbora"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Frango assado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-23-a-27.11.2026.pdf"
+    },
+    "2026-11-25": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Rúcula, Beterraba, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Ervilha, Farofa simples"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Bisteca ao vinagrete"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Maçã"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-23-a-27.11.2026.pdf"
+    },
+    "2026-11-26": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Mix de folhas, Cenoura, Molho mostarda agridoce"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Lentilha, Batata doce"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Frango assado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Banana"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-23-a-27.11.2026.pdf"
+    },
+    "2026-11-27": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Alface, Rabanete, Molho shoyu"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Proteína de soja, Macarrão alho e óleo"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Suíno ensopado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-23-a-27.11.2026.pdf"
     }
    },
    "nome": "RU CCA",
    "pagina": "https://ru.ufsc.br/cca-2/"
   }
  },
- "atualizado": "2026-11-22T20:29-03:00"
+ "atualizado": "2026-11-24T17:04-03:00"
 }
