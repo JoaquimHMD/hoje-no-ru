@@ -813,6 +813,209 @@
       }
      ],
      "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-23-29.11.pdf"
+    },
+    "2026-11-30": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral / Feijão"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Sassami empanado"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Creme de ervilha"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Acelga e beterraba"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Molho de mostarda"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
+    },
+    "2026-12-01": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral / Feijão com vegetais"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Carne moída com milho (almoço)/ Almôndegas ao molho vermelho (jantar)"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Farofa com couve"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Alface e pepino"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Molho de mostarda"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Maçã"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
+    },
+    "2026-12-02": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral / Feijão carioca"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Iscas de carne aceboladas"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Abobrinha refogada"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Couve folha e cenoura ralada"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Vinagrete"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Banana"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
+    },
+    "2026-12-03": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral / Feijão carioca"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Frango ao curry"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Brócolis cozido"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Acelga e beterraba ralada"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Molho de mostarda"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Maçã"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
+    },
+    "2026-12-04": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral / Feijão"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Sobrecoxa de frango"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Ratatouille"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Agrião e rabanete ralado"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Molho de ervas"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
+    },
+    "2026-12-05": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral /Feijão"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Almôndegas ao molho vermelho"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Polenta"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Alface e repolho roxo"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Molho de mostarda"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Iogurte"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
+    },
+    "2026-12-06": {
+     "itens": [
+      {
+       "rotulo": "Base",
+       "texto": "Arroz parboilizado / Arroz integral / Feijão"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Bife acebolado"
+      },
+      {
+       "rotulo": "Complemento",
+       "texto": "Mandioquinha"
+      },
+      {
+       "rotulo": "Saladas",
+       "texto": "Vagem cozida"
+      },
+      {
+       "rotulo": "Molho",
+       "texto": "Molho de ervas"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Gelatina"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/CARDÁPIO-RESTAURANTE-UNIVERSITÁRIO-30.11-06.12.pdf"
     }
    },
    "nome": "RU Trindade",
@@ -1319,11 +1522,116 @@
       }
      ],
      "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-de-23-a-27.11.2026.pdf"
+    },
+    "2026-11-30": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Mix de folhas, Beterraba, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Lentilha, Farofa de batata palha"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Estrogonofe de frango"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-CCA-de-30.11-a-04.12.2026.pdf"
+    },
+    "2026-12-01": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Rúcula, Pepino, Molho de mostarda"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Proteína de soja refogada, Polenta"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Suíno ensopado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Maçã"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-CCA-de-30.11-a-04.12.2026.pdf"
+    },
+    "2026-12-02": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Alface, Rabanete, Molho shoyu"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Ervilha, Farofa de biju com cebola"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Frango assado"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-CCA-de-30.11-a-04.12.2026.pdf"
+    },
+    "2026-12-03": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Mix de folhas, Cenoura, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Lentilha, Macarrão ao pesto"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Mix de carnes"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Banana"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-CCA-de-30.11-a-04.12.2026.pdf"
+    },
+    "2026-12-04": {
+     "itens": [
+      {
+       "rotulo": "Saladas",
+       "texto": "Repolho, Beterraba, Molho de ervas"
+      },
+      {
+       "rotulo": "Acompanhamentos",
+       "texto": "Arroz parboilizado, Arroz integral, Feijão, Mix de grãos, Abobrinha refogada"
+      },
+      {
+       "rotulo": "Carne",
+       "texto": "Bisteca suína ao barbecue"
+      },
+      {
+       "rotulo": "Sobremesa",
+       "texto": "Laranja"
+      }
+     ],
+     "pdf": "http://siteru.paginas.ufsc.br/files/2026/11/Cardápio-CCA-de-30.11-a-04.12.2026.pdf"
     }
    },
    "nome": "RU CCA",
    "pagina": "https://ru.ufsc.br/cca-2/"
   }
  },
- "atualizado": "2026-11-26T15:56-03:00"
+ "atualizado": "2026-11-27T15:48-03:00"
 }
